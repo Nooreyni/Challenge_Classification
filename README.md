@@ -9,7 +9,7 @@ Use the Classification strategy to gather and preprocess data, Choose a model, T
 
 
 ## Duration
-this challenge took 3 days
+this challenge tooks 3 days
 
 
 ## Objectif
@@ -46,13 +46,25 @@ Score with best model:
   * Train set: 0.808     
   * Test set:  0.819   
 
-ROC Curve:
+ROC Curve:   
 
-![ROC Curve](img/logreg.png)   
+<details>
+  <summary>View detail</summary>   
+
+![View file](img/logreg.png)   
+
+</details>   
+
 
 Metrics:   
 
-![Metrics](img/screen/logregg.png)     
+<details>
+  <summary>View detail</summary>   
+
+![View file](img/screen/logregg.png)   
+
+</details>   
+ 
 
 
 
@@ -65,7 +77,13 @@ Score with defaults value:
 
 ROC Curve:  
 
-![ROC Curve](img/DecisionTreeClassifier().png) 
+<details>
+  <summary>View detail</summary>   
+
+![View file](img/DecisionTreeClassifier().png)   
+
+</details>   
+
 
 Score with best model:
   * Train set: 0.820     
@@ -73,11 +91,23 @@ Score with best model:
 
 ROC Curve:
 
-![ROC Curve](img/DecisionTreeClassifier(max_depth=3).png)   
+<details>
+  <summary>View detail</summary>   
+
+![View file](img/DecisionTreeClassifier(max_depth=3).png)   
+
+</details>   
+ 
 
 Metrics:   
 
-![Metrics](img/screen/dtc.png)     
+<details>
+  <summary>View detail</summary>   
+
+![View file](img/screen/dtc.png)   
+
+</details>   
+   
 
 
 ### 3- Random Forest
@@ -88,7 +118,13 @@ Score with defaults value:
 
 ROC Curve:  
 
-![ROC Curve](img/RandomForestClassifier().png) 
+<details>
+  <summary>View detail</summary>   
+
+![View file](img/RandomForestClassifier().png)   
+
+</details>   
+
 
 Score with best model:
   * Train set: 0.844     
@@ -96,11 +132,23 @@ Score with best model:
 
 ROC Curve:
 
-![ROC Curve](img/RandomForestClassifier2.png)   
+<details>
+  <summary>View detail</summary>   
+
+![View file](img/RandomForestClassifier2.png)   
+
+</details>   
+
 
 Metrics:   
 
-![Metrics](img/screen/rf.png)     
+<details>
+  <summary>View detail</summary>   
+
+![View file](img/screen/rf.png)   
+
+</details>   
+
 
 
 ### 4- KNeighbors
@@ -111,7 +159,13 @@ Score with defaults value:
 
 ROC Curve:  
 
-![ROC Curve](img/RandomForestClassifier().png) 
+<details>
+  <summary>View detail</summary>   
+
+![View file](img/RandomForestClassifier().png)   
+
+</details>   
+
 
 Score with best model:
   * Train set: 0.816     
@@ -119,11 +173,23 @@ Score with best model:
 
 ROC Curve:
 
-![ROC Curve](img/KNeighborsClassifier2.png)   
+<details>
+  <summary>View detail</summary>   
+
+![View file](img/KNeighborsClassifier2.png)   
+
+</details>   
+
 
 Metrics:   
 
-![Metrics](img/screen/knn.png)     
+<details>
+  <summary>View detail</summary>   
+
+![View file](img/screen/knn.png)   
+
+</details>   
+   
 
 
 ### 5- SVC
@@ -134,7 +200,13 @@ Score with defaults value:
 
 ROC Curve:  
 
-![ROC Curve](img/SVC().png) 
+<details>
+  <summary>View detail</summary>   
+
+![View file](img/SVC().png)   
+
+</details>   
+
 
 Score with best model:
   * Train set: 0.833     
@@ -142,11 +214,23 @@ Score with best model:
 
 ROC Curve:
 
-![ROC Curve](img/SVC2.png)   
+<details>
+  <summary>View detail</summary>   
+
+![View file](img/SVC2.png)   
+
+</details>   
+  
 
 Metrics:   
 
-![Metrics](img/screen/svc.png)     
+<details>
+  <summary>View detail</summary>   
+
+![View file](img/screen/svc.png)   
+
+</details>   
+   
 
 ### 6- GaussianNB
 
@@ -156,7 +240,13 @@ Score with defaults value:
 
 ROC Curve:  
 
-![ROC Curve](img/GaussianNB().png) 
+<details>
+  <summary>View detail</summary>   
+
+![View file](img/GaussianNB().png)   
+
+</details>   
+
 
 Score with best model:
   * Train set: 0.806     
@@ -164,20 +254,31 @@ Score with best model:
 
 ROC Curve:
 
-![ROC Curve](img/GaussianNB(var_smoothing=1.0).png)   
+<details>
+  <summary>View detail</summary>   
+
+![View file](img/GaussianNB(var_smoothing=1.0).png)   
+
+</details>   
+
 
 Metrics:   
 
-![Metrics](img/screen/gauss.png)     
+<details>
+  <summary>View detail</summary>   
+
+![View file](img/screen/gauss.png)   
+
+</details>   
 
 
 
 ## The best model
 
-After testing those six models, we can see that:
-    - if we use only default values, most of time we have an overfit. Training score is 100% percent but Testing score is far less (60 to 80)
+After testing those six models, we can see that:   
+    - if we use only default values, most of time we have an overfit. Training score is 100% percent but Testing score is far less (60 to 80)   
     - if we tune parameters by using gridsearchCV the Training score is reduced but we get higher Testing score.   
-so if we refer to the best parameters, we can conclude that [Decision_tree](Decision_tree.ipynb), [Random_forest](Random_forest.ipynb) and [SVC](svc.ipynb) are the best models for this cleaned dataset.   
+So if we refer to the best parameters, we can conclude that [Decision_tree](Decision_tree.ipynb), [Random_forest](Random_forest.ipynb) and [SVC](svc.ipynb) are the best models for this cleaned dataset.   
 
 
 ## Author
