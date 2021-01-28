@@ -34,7 +34,11 @@ In this [main](main.ipynb) notebook also we define functions for the Machine lea
 And then, for every classification model, we use a differrent notebook and always importing [main](main.ipynb) in it.
 We use here six models:   
 
-### 1- Logistic Regression
+### 1- Logistic Regression   
+
+<details>   
+  <summary>View detail</summary>    
+
 
 Score with defaults value:  
   * Train set: 0.808   
@@ -66,9 +70,13 @@ Metrics:
 </details>   
  
 
+</details>
 
+### 2- Decision Tree   
 
-### 2- Decision Tree
+<details>   
+  <summary>View detail</summary>    
+
 
 Score with defaults value:  
   * Train set: 1.000  
@@ -108,9 +116,13 @@ Metrics:
 
 </details>   
    
+</details>
 
+### 3- Random Forest   
 
-### 3- Random Forest
+<details>   
+  <summary>View detail</summary>    
+
 
 Score with defaults value:  
   * Train set: 1.000   
@@ -149,9 +161,13 @@ Metrics:
 
 </details>   
 
+</details>
 
+### 4- KNeighbors   
 
-### 4- KNeighbors
+<details>   
+  <summary>View detail</summary>    
+
 
 Score with defaults value:  
   * Train set: 0.843   
@@ -190,9 +206,13 @@ Metrics:
 
 </details>   
    
+</details>
 
+### 5- SVC   
 
-### 5- SVC
+<details>   
+  <summary>View detail</summary>    
+
 
 Score with defaults value:  
   * Train set: 0.824   
@@ -231,8 +251,13 @@ Metrics:
 
 </details>   
    
+</details>
 
-### 6- GaussianNB
+### 6- GaussianNB   
+
+<details>   
+  <summary>View detail</summary>    
+
 
 Score with defaults value:  
   * Train set: 0.688   
@@ -271,6 +296,7 @@ Metrics:
 
 </details>   
 
+</details>
 
 
 ## The best model
